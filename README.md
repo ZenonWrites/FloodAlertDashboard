@@ -2,7 +2,7 @@
 
 A complete, production-ready IoT Flood Monitoring System with Real-Time Dashboard.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [System Overview](#system-overview)
 - [Technology Stack](#technology-stack)
@@ -10,11 +10,14 @@ A complete, production-ready IoT Flood Monitoring System with Real-Time Dashboar
 - [Prerequisites](#prerequisites)
 - [Installation & Setup](#installation--setup)
 - [Running the Application](#running-the-application)
-- [API Documentation](#api-documentation)
 - [Features](#features)
+- [API Documentation](#api-documentation)
 - [Troubleshooting](#troubleshooting)
+- [Advanced Configuration](#advanced-configuration)
+- [Support](#support)
+- [License](#license)
 
-## 🎯 System Overview
+## System Overview
 
 Flood-Safe Mumbai is a comprehensive IoT monitoring system designed to track water levels across multiple flood-prone locations in Mumbai. The system consists of:
 
@@ -23,7 +26,7 @@ Flood-Safe Mumbai is a comprehensive IoT monitoring system designed to track wat
 - **PostgreSQL Database**: Reliable data storage and retrieval
 - **React Dashboard**: Real-time monitoring interface with live updates
 
-## 🛠 Technology Stack
+## Technology Stack
 
 ### Backend
 - **FastAPI** 0.104.1 - Modern Python web framework
@@ -36,7 +39,7 @@ Flood-Safe Mumbai is a comprehensive IoT monitoring system designed to track wat
 - **Recharts** 2.10.3 - Data visualization
 - **CSS3** - Custom styling
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 flood-safe-mumbai/
@@ -65,7 +68,7 @@ flood-safe-mumbai/
 └── README.md
 ```
 
-## ✅ Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -75,7 +78,7 @@ Before you begin, ensure you have the following installed:
 - **pip** - Python package installer (usually comes with Python)
 - **npm** - Node package manager (comes with Node.js)
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Step 1: Database Setup
 
@@ -193,7 +196,7 @@ npm install
 
 The frontend is pre-configured to connect to `http://localhost:8000`. If your backend runs on a different port, update the `API_BASE_URL` constant in each component file.
 
-## 🎮 Running the Application
+## Running the Application
 
 ### Terminal 1: Start Backend Server
 
@@ -220,7 +223,7 @@ npm start
 
 The dashboard will open automatically in your browser at: **http://localhost:3000**
 
-## 🎨 Features
+## Features
 
 ### Dashboard Components
 
@@ -258,7 +261,7 @@ The dashboard will open automatically in your browser at: **http://localhost:300
    - Source identification
    - Auto-refresh every 10 seconds
 
-## 📡 API Documentation
+## API Documentation
 
 ### Base URL
 ```
@@ -329,7 +332,7 @@ FastAPI provides automatic interactive documentation:
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Database Connection Issues
 
@@ -396,7 +399,7 @@ taskkill /PID <PID> /F
 lsof -ti:3000 | xargs kill -9
 ```
 
-## 🔧 Advanced Configuration
+## Advanced Configuration
 
 ### Production Deployment
 
@@ -431,14 +434,14 @@ SECRET_KEY=your-secret-key
 DEBUG=False
 ```
 
-## 📞 Support
+## Support
 
 For issues or questions:
 1. Check the troubleshooting section
 2. Review FastAPI docs: https://fastapi.tiangolo.com/
 3. Review React docs: https://react.dev/
 
-## 📄 License
+## License
 
 This project is created for educational and demonstration purposes.
 
